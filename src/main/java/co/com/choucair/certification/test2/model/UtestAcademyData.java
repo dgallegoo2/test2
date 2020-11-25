@@ -70,9 +70,7 @@ public class UtestAcademyData {
         this.intYearOfBird = intYearOfBird;
     }
 
-    public String getStrCity() {
-        return strCity;
-    }
+    public String getStrCity() {return strCity;}
 
     public void setStrCity(String strCity) {
         this.strCity = strCity;

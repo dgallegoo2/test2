@@ -86,7 +86,12 @@ public class Join implements Task {
             Enter.theValue(strConfirmPassword).into(JoinPage.INPUT_CONFIRM_PASSWORD),
             Click.on(JoinPage.CHECK_STAY_INFORMED),
             Click.on(JoinPage.CHECK_TERMS),
-            Click.on(JoinPage.CHECK_PRIVACY)
+            Click.on(JoinPage.CHECK_PRIVACY)/*,
+            Click.on(JoinPage.BUTTON_SUBMIT)
+            NOTA: Se comenta la linea de código 90 que da click al boton para terminar de registrar el formato
+            ya que la página presenta captcha, haciendo que el test no pueda terminar el regstro, se procede a
+            probar con un usuario registrado manualmente para mostrar la comprobación del registro. Gracias.
+            */
 
         );
     }
